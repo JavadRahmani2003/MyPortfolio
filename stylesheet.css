@@ -1,0 +1,149 @@
+/*Font faces of website*/
+@font-face
+{
+    font-family: maintextTitle;
+    src: url("fonts/BHoma.ttf");
+}
+@font-face
+{
+    font-family: AmaintextTitle;
+    src: url("fonts/BTitrBd.ttf");
+}
+
+/*Body of website*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Main Menu of website*/
+.Main-Menu {
+    width: 100%;
+    background-image: linear-gradient(to right, #35012a, #43035c, #180241, #040d35);
+}
+.Main-Menu div {
+    border-radius: 7px;
+    display: inline-block;
+    padding: 15px;
+}
+.Main-Menu div:hover {
+    background-image: linear-gradient(45deg, rgb(114, 0, 0),rgb(158, 58, 0), rgb(160, 157, 0));
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+}
+.Main-Menu div a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 23px;
+    font-family: maintextTitle;
+}
+
+/*Main Panel to preview and sort all components in one single page*/
+.Main-Panel {
+    width: 100%;
+    height: 100%;
+}
+
+/*MainPanel -> The Image banner section*/
+.neonized-Pic {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.image {
+    width: 300px;
+    height: 300px;
+    filter: blur(10px) grayscale(100%);
+    margin-right: 26%;
+    transition: 0.5s;
+    padding: 10px;
+    border-radius: 42px;
+}
+.image:hover {
+    filter: blur(0px) grayscale(0%);
+    width: 320px;
+    height: 320px;
+    transition: 0.5s;
+    box-shadow: 1px 1px 50px #edf8d0;
+    background-color: #edf8d0;
+}
+
+/*MainPanel part 1 -> the text part*/
+.Main-Text {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.Main-Text h1 {
+    font-size: 50px;
+    font-family: maintextTitle;
+}
+.Main-Text p {
+    width: 95%;
+    font-size: 20px;
+    text-align: justify;
+    font-family: AmaintextTitle;
+}
+
+/*Jobs I did*/
+.Works {
+    width: 100%;
+    margin-top: 65px;
+    display: inline-flex;
+    padding: 5px;
+    position: fixed;
+}
+.Samples {
+    margin-right: 33px;
+    width: 250px;
+    padding: 5px;
+    height: 320px;
+    background-image: linear-gradient(70deg, rgb(8, 24, 13),rgb(6, 20, 17), rgb(9, 32, 37));
+    border-radius: 15px;
+    box-shadow: 1px 1px 20px #888888;
+}
+
+/*Github Section*/
+.github-repo {
+    margin-top: 20px;
+}
+.repo {
+    width: 250px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0px;
+    text-align: center;
+}
+
+/*Darkmode Support for website*/
+.dark-mode {
+    background-color: #1d1d1d;
+    color: #fff;
+}
+
+/*Media Screen -> Responsivelty*/
+@media screen and (max-width: 1056px) {
+    .Main-Text {
+        width: 100%;
+        float: none;
+        margin: auto;
+    }
+    .neonized-Pic {
+        width: 100%;
+        float: none;
+    }
+    .image {
+        margin-top: 10%;
+    }
+    .Main-Panel {
+        background-image: linear-gradient(rgb(6, 48, 48),rgb(6, 48, 39),rgb(6, 48, 35),rgb(6, 48, 44),rgb(6, 48, 27),rgb(6, 48, 15),rgb(14, 48, 6),rgb(26, 48, 6),rgb(39, 48, 6));
+    }
+    .Works
+    {
+        margin-top: 0px;
+    }
+}
