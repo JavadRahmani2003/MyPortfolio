@@ -17,7 +17,7 @@ window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', eve
 });
 
 // Fetch GitHub repositories
-/*async function fetchGitHubRepos() {
+async function fetchGitHubRepos() {
     const response = await fetch('https://api.github.com/users/javadrahmani2003/repos');
     const repos = await response.json();
     const repoContainer = document.getElementById('github-repos');
@@ -35,4 +35,4 @@ window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', eve
 }
 
 // Call the function to fetch repos
-fetchGitHubRepos();*/
+fetchGitHubRepos();
